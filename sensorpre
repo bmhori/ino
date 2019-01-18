@@ -30,7 +30,7 @@ void loop() {
  
 void ligarAlarme() {
   //Ligando o led
-  digitalWrite(pinLed, HIGH);
+  digitalWrite(pinLed, LOW);
 
   //Ligando o buzzer com uma frequencia de 1500 hz.
   tone(pinBuzzer,1500);
@@ -41,7 +41,7 @@ void ligarAlarme() {
  
 void desligarAlarme() {
   //Desligando o led
-  digitalWrite(pinLed, LOW);
+  digitalWrite(pinLed, HIGH);
    
   //Desligando o buzzer
   noTone(pinBuzzer);
